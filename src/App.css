@@ -1,25 +1,37 @@
-body, html, div {
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-image: url(./assets/img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    overflow-y: visible;
+}
+
+div {
     height: 100%;
     width: 100%;
     margin: 0;
 }
 
-.container-1 {
-    background-image: url(./assets/img/bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    display: flex;
-    padding: 15px;
-}
-
 .row-1{
-    flex: 50%;
     background-color: white;
     border-radius: 5px;
     padding: 20px;
-    margin: 40px 10px 0 0;
+    margin: 40px 5px 10px 0;
+    height: fit-content;
+}
+
+.row-1::after{
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 5px 10px 0;
     height: fit-content;
 }
 
@@ -43,11 +55,18 @@ body, html, div {
 }
 
 .row-2{
-    flex: 50%;
     background-color: white;
     border-radius: 10px;
     padding: 20px;
-    margin: 40px 0 0 10px;
+    margin: 40px 0 10px 5px;
+    height: fit-content;
+}
+
+.row-2::after{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 10px 10px 5px;
     height: fit-content;
 }
 
